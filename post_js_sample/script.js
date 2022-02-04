@@ -4,4 +4,5 @@ const messageList = document.getElementById('message-list')
 
 button.onclick = () => {
   messageList.insertAdjacentHTML('afterbegin', `<p>${messageField.value}</p>`)
+  messageField.value = ''
 }
